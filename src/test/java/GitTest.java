@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class GitTest {
     @Test
-    void githubTest() throws InterruptedException {
+    void githubTest()  {
         open("https://github.com/");
         $(".HeaderMenu-nav").$(byText("Solutions")).hover();
         $(byTagAndText("a","Enterprises")).click();
